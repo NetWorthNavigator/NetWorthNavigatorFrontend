@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
         <header className="flex w-full h-40 items-center justify-between p-4">
@@ -5,13 +7,19 @@ export default function Footer() {
             <nav className="pr-10">
                 <ul className="flex space-x-4 text-xl font-medium">
                     <li>
-                        <a href="/" className="hover:underline">Your Portfolio</a>
+                        <Link href="/portfolio/">
+                            <a>Your Portfolio</a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/about" className="hover:underline">Get Started</a>
+                        <Link href="/portfolio/">
+                            <a>Your Portfolio</a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/about" className="hover:underline">About</a>
+                        <Link href="/portfolio/">
+                            <a>Your Portfolio</a>
+                        </Link>
                     </li>
                 </ul>
             </nav>
