@@ -4,8 +4,7 @@ export default function Home() {
   return (
     <main className="flex h-screen w-screen">
       <Header />
-      {API_URL}
+      URL: {API_URL}
     </main>
   );
 }
-;
