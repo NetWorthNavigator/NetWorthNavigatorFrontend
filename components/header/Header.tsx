@@ -7,19 +7,13 @@ export default function Header() {
             <nav className="pr-10">
                 <ul className="flex space-x-4 text-xl font-medium">
                     <li>
-                        <Link href="/portfolio/">
-                            <a>Your Portfolio</a>
-                        </Link>
+                        <Link href="/portfolio/">Your Portfolio</Link>
                     </li>
                     <li>
-                        <Link href="/get-started/">
-                            <a>Get Started</a>
-                        </Link>
+                        <Link href="/get-started/">Get Started</Link>
                     </li>
                     <li>
-                        <Link href="/about/">
-                            <a>About</a>
-                        </Link>
+                        <Link href="/about/">About</Link>
                     </li>
                 </ul>
             </nav>
