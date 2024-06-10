@@ -1,13 +1,11 @@
-import Header from "../components/header/Header";
-import { API_URL } from "../constants";
+// landing page not sure why
+import Layout from "../pages/layouts/layout"
 
+export default function MyApp() {
 
-export default function Home() {
-
-  return (
-    <main className="flex h-screen w-screen">
-      <Header />
-      URL: {API_URL}
-    </main>
-  );
-}
+    return (
+    <Layout>
+      <div></div>
+    </Layout>
+    )
+  }
