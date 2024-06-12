@@ -1,0 +1,24 @@
+# FOR LOCAL TESTING ONLY
+
+version: '3.7'
+services:
+  supabase:
+    image: supabase/supabase:latest
+    ports:
+      - "8000:8000" # Supabase Studio
+      - "5432:5432" # PostgreSQL
+      - "6543:6543" # PostgREST
+      - "4000:4000" # GoTrue
+      - "4001:4001" # Realtime
+    environment:
+      POSTGRES_PASSWORD: supabase
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      SUPABASE_JWT_SECRET: super-secret-jwt-token
+      SUPABASE_ANON_KEY: super-secret-anon-key
+      SUPABASE_SERVICE_ROLE_KEY: super-secret-service-role-key
+    volumes:
+      - supabase-db:/var/lib/postgresql/data
+
+volumes:
+  supabase-db:
