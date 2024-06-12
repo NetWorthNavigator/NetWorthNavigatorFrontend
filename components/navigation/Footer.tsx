@@ -2,8 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className="flex w-full h-40 items-center justify-between p-4">
-            <h1 className="text-xl font-medium pl-20">NetWorthNavigator</h1>
+        <footer className="flex w-full h-40 items-center justify-end p-4">
             <nav className="pr-10">
                 <ul className="flex space-x-4 text-xl font-medium">
                     <li>

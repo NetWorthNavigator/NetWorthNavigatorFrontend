@@ -12,7 +12,7 @@ export const Navbar = () => {
         </a>
         <ul className="hidden md:flex gap-x-6 text-white ">
         <li>
-            <Link href="/test" className ="mx-2 hover:text-gray-300">
+            <Link href="/" className ="mx-2 hover:text-gray-300">
               <p>Home</p>
             </Link>
           </li>
