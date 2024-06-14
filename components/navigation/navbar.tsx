@@ -7,9 +7,9 @@ export const Navbar = () => {
   <nav className="w-full h-20 bg-emerald-800 sticky top-0 sm:p-4 md:justify-between md:items-center">
     <div className="container mx-auto px-4 h-full">
       <div className="flex justify-between items-center h-full">
-        <a href="" className = "text-2xl font-bold text-white">
+        <Link href="/" className = "text-2xl font-bold text-white">
           Networth Navigator
-        </a>
+        </Link>
         <ul className="hidden md:flex gap-x-6 text-white ">
         <li>
             <Link href="/" className ="mx-2 hover:text-gray-300">
@@ -29,6 +29,11 @@ export const Navbar = () => {
           <li>
             <Link href="/about" className ="mx-2 hover:text-gray-300">
               <p>About</p>
+            </Link>
+          </li>
+          <li>
+            <Link href="/authenticator" className ="mx-2 hover:text-gray-300">
+              <p>Account</p>
             </Link>
           </li>
         </ul>

@@ -1,11 +1,12 @@
 // landing page not sure why
-import Layout from "../pages/layouts/layout"
+import Layout from "@/pages/layouts/layout"
 
-export default function MyApp() {
+//this is the homepage
+export default function Home() {
 
     return (
     <Layout>
-      <div></div>
+      <div><p>entry from app/page.tsx</p></div>
     </Layout>
     )
   }
