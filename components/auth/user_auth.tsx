@@ -30,6 +30,12 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
     }, 3000)
   }
 
+  async function onSubmitGoogle(event: React.SyntheticEvent){
+    event.preventDefault()
+    console.log("any googlers?")
+    console.log("send to google")
+  }
+
   return (
     <div className={cn("grid gap-6", className)} {...props}>
       <form onSubmit={onSubmit}>
@@ -73,12 +79,17 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
         <div className="absolute inset-0 flex items-center">
           <span className="w-full border-t" />
         </div>
-        {/* <div className="relative flex justify-center text-xs uppercase">
+        <div className="relative flex justify-center text-xs uppercase">
           <span className="bg-background px-2 text-muted-foreground">
-            Or continue with
+            or
           </span>
-        </div> */}
+        </div>
       </div>
+        <form onSubmit = {onSubmitGoogle}className = "grid gap-2">
+          <Button className = "">
+                Sign In with Google
+          </Button>
+        </form>
     </div>
   )
 }

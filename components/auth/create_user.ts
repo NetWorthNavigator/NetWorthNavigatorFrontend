@@ -2,7 +2,6 @@ import { API_URL } from "@/constants";
 
 export async function userparse(Email:any, Password:any){
 
-
 // Define the data you want to send
   const data = {
       Email: Email,
